@@ -2,8 +2,10 @@
 
 namespace Dweb_Aula.Models
 {
-    public class Alunos{
+    public class Alunos : Utilizadores{
 
+        //um Aluno é um objeto do tipo Utilizadores
+        //um Aluno é um caso do tipo Utilizadores
         public Alunos() {
             ListaInscricoes = new HashSet<Inscricoes>(); 
         }

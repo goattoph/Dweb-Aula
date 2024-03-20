@@ -1,4 +1,6 @@
-﻿namespace Dweb_Aula.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Dweb_Aula.Models
 {
     public class Cursos
     {
@@ -8,6 +10,8 @@
             ListaUCs = new HashSet<UnidadesCurriculares>();
             ListaAlunos = new HashSet<Alunos>();
         }
+
+        [Key] //PK
         public int Id { get; set; }
 
         public string Nome { get; set; }

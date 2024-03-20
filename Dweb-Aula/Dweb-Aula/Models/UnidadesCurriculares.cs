@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dweb_Aula.Models
 {
@@ -8,6 +9,8 @@ namespace Dweb_Aula.Models
             ListaProfessores = new HashSet<Professores>();
             ListaInscricoes = new HashSet<Inscricoes>();
         }
+
+        [Key] // PK
         public int Id { get; set; }
 
         public string Nome { get; set; }
